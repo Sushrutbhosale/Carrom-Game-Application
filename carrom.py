@@ -19,6 +19,7 @@ GREY = (128,128,128)
 BROWN = (139,69,19)
 WHITE = (215,143,73)
 
+''' Particle class includes all carrom men and striker'''
 class Particle():
 	def __init__(self,screen,colour, (x, y), size,mass):
 		self.x = x
@@ -198,7 +199,8 @@ class Particle():
 
 			if particle.x>515 and particle.speed>0 and particle.y>515 and particle.speed<5:    # Lower Right Pocket
 				particle.inPocketCalculation(particle,game)
-
+				
+''' CarromBoard class includes all the carrom board drawings and the main run def'''
 class CarromBoard():
 	def __init__(self, width=900, height=560, caption="Carrom Board"):
 		self.width, self.height, self.caption = width, height, caption
